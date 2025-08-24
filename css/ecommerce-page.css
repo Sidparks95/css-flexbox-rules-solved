@@ -37,9 +37,15 @@ section {
 }
 
 .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo-search {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .logo {
@@ -71,6 +77,9 @@ section {
 }
 
 .options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .option {
@@ -90,6 +99,7 @@ section {
 }
 
 .category {
+  display: inline-block;
   padding: 10px 18px;
   color: white;
   font-size: 18px;
@@ -111,6 +121,9 @@ section {
 }
 
 .view-options {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 i.fa-th-list {
@@ -123,6 +136,8 @@ i.fa-th-list {
 }
 
 .section-control .view-option {
+  display: flex;
+  flex-flow: row nowrap;
   width: 40px;
   height: 40px;
   border: 1px solid #8d8ba5;
@@ -147,10 +162,14 @@ i.fa-th-list {
 }
 
 .product-name {
+  padding: 10px 20px;
+  gap: 10px;
   font-size: 28px;
 }
 
 .product-description {
+  padding: 0 20px;
+  gap: 10px;
   line-height: 24px;
   color: #8d8ba5;
 }
@@ -182,6 +201,10 @@ i.fa-th-list {
 /* GRID VIEW STYLES */
 
 .grid.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
 }
 
 .grid .product {
@@ -199,10 +222,13 @@ i.fa-th-list {
 
 .grid .product-info {
   text-align: center;
+  gap: 40px;
   padding: 0 20px 30px;
 }
 
 .grid .product-action {
+  display: flex;
+  justify-content: center;
   padding-top: 30px;
   border-top: 1px solid #8d8ba5;
 }
@@ -210,6 +236,9 @@ i.fa-th-list {
 /* LINE VIEW STYLES */
 
 .lines.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .lines .product {
@@ -222,20 +251,38 @@ i.fa-th-list {
 }
 
 .lines .product-data {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  padding: 0 20px;
 }
 
 .lines .product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .lines .product-action {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  border-top: 1px solid #8d8ba5;
 }
 
 /* LINES-ACTION VIEW */
 
 .lines-action.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
 }
 
 .lines-action .product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .lines-action .product-image-wrapper {
@@ -244,9 +291,16 @@ i.fa-th-list {
 }
 
 .lines-action .product-data {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  padding: 0 20px;
 }
 
 .lines-action .product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .lines-action .product-action {
