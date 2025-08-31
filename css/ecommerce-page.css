@@ -60,6 +60,8 @@ section {
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .search-bar input {
@@ -78,14 +80,18 @@ section {
 
 .options {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  justify-content: center;
 }
 
 .option {
   min-width: 60px;
   text-transform: capitalize;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
 }
 
 .option i {
@@ -96,6 +102,10 @@ section {
 .categories {
   background-color: #2b2d36;
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .category {
@@ -142,6 +152,8 @@ i.fa-th-list {
   height: 40px;
   border: 1px solid #8d8ba5;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 .products {
@@ -222,8 +234,10 @@ i.fa-th-list {
 
 .grid .product-info {
   text-align: center;
-  gap: 40px;
   padding: 0 20px 30px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .grid .product-action {
@@ -242,7 +256,9 @@ i.fa-th-list {
 }
 
 .lines .product {
+  display: flex;
   padding: 20px;
+
 }
 
 .lines .product-image-wrapper {
@@ -252,7 +268,7 @@ i.fa-th-list {
 
 .lines .product-data {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   gap: 20px;
   padding: 0 20px;
 }
@@ -265,9 +281,8 @@ i.fa-th-list {
 
 .lines .product-action {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 30px;
-  border-top: 1px solid #8d8ba5;
 }
 
 /* LINES-ACTION VIEW */
@@ -281,18 +296,21 @@ i.fa-th-list {
 
 .lines-action .product {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
 }
 
 .lines-action .product-image-wrapper {
   min-width: 300px;
   height: 200px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 .lines-action .product-data {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   gap: 20px;
   padding: 0 20px;
 }
@@ -304,7 +322,12 @@ i.fa-th-list {
 }
 
 .lines-action .product-action {
-  border-left: 1px solid #8d8ba5;
   padding-left: 30px;
   min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-left: 1px solid #8d8ba5;
 }
